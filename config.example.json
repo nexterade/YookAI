@@ -1,0 +1,85 @@
+{
+  "provider": {
+    "default": "openrouter",
+    "openrouter": {
+      "api_key": "",
+      "base_url": "https://openrouter.ai/api/v1"
+    },
+    "openai": {
+      "api_key": "",
+      "base_url": "https://api.openai.com/v1"
+    },
+    "anthropic": {
+      "api_key": "",
+      "base_url": "https://api.anthropic.com/v1"
+    },
+    "gemini": {
+      "api_key": "",
+      "base_url": "https://generativelanguage.googleapis.com/v1beta"
+    },
+    "ollama": {
+      "api_key": "",
+      "base_url": "http://127.0.0.1:11434"
+    }
+  },
+  "chat": {
+    "default_model": "auto",
+    "stream": true,
+    "show_reasoning": true,
+    "auto_title": true,
+    "model_strategy": "latency-best-free",
+    "latency_benchmark_ttl_hours": 6,
+    "model_profiles": {}
+  },
+  "ui": {
+    "theme": "dark",
+    "sidebar_default": "open"
+  },
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8000,
+    "api_key": ""
+  },
+  "version": "0.3.28",
+  "memory": {
+    "mode": "default",
+    "project_id": "default",
+    "retrieval_limit": 16,
+    "embedding": "local-hash-384"
+  },
+  "attachments": {
+    "max_mb": 20,
+    "document_extraction": true
+  },
+  "tools": {
+    "enabled": true,
+    "shell": {
+      "enabled": false,
+      "timeout": 10
+    },
+    "workspace": "~/.yookai/workspace"
+  },
+  "context": {
+    "max_tokens": 24000,
+    "reserve_tokens": 3000
+  },
+  "agent": {
+    "enabled": false,
+    "max_steps": 5,
+    "require_approval": true
+  },
+  "projects": {
+    "enabled": true
+  },
+  "research": {
+    "enabled": false,
+    "max_fetch_bytes": 1000000
+  },
+  "mcp": {
+    "enabled": false,
+    "servers": []
+  },
+  "automation": {
+    "enabled": false
+  }
+}
