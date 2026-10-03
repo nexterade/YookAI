@@ -1,0 +1,13 @@
+<div class="composer-dock">
+  <form class="composer" id="composer-form">
+    <input id="attachment-input" type="file" multiple hidden accept="image/*,.txt,.md,.csv,.json,.xml,.html,.css,.js,.py,.log,.pdf,.docx,.xlsx,.xlsm,.zip">
+    <div class="attachment-list" id="attachment-list" aria-live="polite"></div>
+    <div class="composer-main">
+      <button class="composer-icon" id="attach-btn" type="button" aria-label="Add files" title="Add files"><svg viewBox="0 0 24 24" focusable="false"><path d="m8.5 12.5 6.8-6.8a3.2 3.2 0 1 1 4.5 4.5l-8.1 8.1a5 5 0 0 1-7.1-7.1l8-8"/></svg></button>
+      <textarea id="composer-input" rows="1" placeholder="Message YookAI" aria-label="Pesan" autocomplete="off"></textarea>
+      <button class="send-btn" id="send-btn" type="submit" aria-label="Kirim pesan" disabled><svg viewBox="0 0 24 24" focusable="false"><path d="m5 12 14-7-4 14-3-6-7-1Z"/></svg></button>
+      <button class="composer-stop" id="stop-btn" type="button" aria-label="Hentikan generasi" hidden><svg viewBox="0 0 24 24" focusable="false"><rect x="7" y="7" width="10" height="10" rx="1.5"/></svg></button>
+    </div>
+    <div class="composer-hint">YookAI can make mistakes. Check important info.</div>
+  </form>
+</div>

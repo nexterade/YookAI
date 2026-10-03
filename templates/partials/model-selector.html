@@ -1,0 +1,24 @@
+<div class="model-selector" id="model-selector">
+  <button class="model-trigger" id="model-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+    <span class="model-name" id="current-model-name">Pilih Model</span>
+    <span class="model-provider-badge" id="current-provider-name">OpenRouter</span>
+    <span class="model-chevron" aria-hidden="true">⌄</span>
+  </button>
+  <div class="model-dropdown" id="model-dropdown" hidden role="dialog" aria-label="Model dan provider">
+    <div class="model-provider-row">
+      <label class="model-provider-select">Provider
+        <select id="model-provider-select" aria-label="Provider"></select>
+      </label>
+      <button class="model-settings-trigger" id="model-settings-trigger" type="button" title="Pengaturan model" aria-label="Pengaturan model">
+        <svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.2-1.7l2-1.2-2-3.4-2.2 1a7 7 0 0 0-2.9-1.7V2h-4v3a7 7 0 0 0-2.9 1.7l-2.2-1-2 3.4 2 1.2A7 7 0 0 0 5 12c0 .6.1 1.2.2 1.7l-2 1.2 2 3.4 2.2-1a7 7 0 0 0 2.9 1.7v3h4v-3a7 7 0 0 0 2.9-1.7l2.2 1-2-3.4-2-1.2c.1-.5.2-1.1.2-1.7Z"/></svg>
+      </button>
+    </div>
+    <div class="model-search-wrapper">
+      <input type="text" class="model-search" id="model-search" placeholder="Cari model..." aria-label="Cari model" autocomplete="off">
+    </div>
+    <div class="model-group" data-group="recommended"><div class="model-group-label">Recommended</div><ul class="model-list" id="model-list-recommended"></ul></div>
+    <div class="model-group" data-group="free"><div class="model-group-label">Free / Local</div><ul class="model-list" id="model-list-free"></ul></div>
+    <div class="model-group" data-group="all"><div class="model-group-label">All Models</div><ul class="model-list" id="model-list-all"></ul></div>
+    <div class="model-empty" id="model-empty" hidden>Tidak ada model ditemukan.</div>
+  </div>
+</div>
